@@ -1,0 +1,51 @@
+/*!
+ * Загрузка компонент Маркетплейс (Download).
+ *
+ * Расширение "Каталог Маркетплейс".
+ * Модуль "Маркетплейс"
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+#g-marketplace-catalog-progress .x-panel-body {
+    background-color: #f5f5f5;
+}
+
+
+/**
+ * Заголовок (шапка) формы с описанием и значком.
+ * Ext.form.field.Display.cls = "g-form__display__header [g-form__display__header_icon]"
+ */
+.g-form__display__header {
+   background-color: #f0f0f0;
+}
+
+
+/**
+ * Индикатор загрузки.
+ * Ext.ProgressBar.id = "g-progress-download"
+ */
+#g-progress-download {
+   overflow: inherit;
+   margin-top: 25px;
+}
+#g-progress-download .x-progress-text,
+#g-progress-download .x-progress-bar {
+   overflow: inherit;
+}
+#g-progress-download .x-progress {
+    background-color: #bfbfbf;
+}
+#g-progress-download-bar {
+   background-color:#217346;
+}
+#g-progress-download .x-progress-text-back {
+   display: none;
+}
+#g-progress-download .x-progress-text {
+   margin-top: -20px;
+   font-size: 17px; 
+   font-weight: normal;
+}

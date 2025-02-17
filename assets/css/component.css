@@ -1,0 +1,166 @@
+/*!
+ * Компонент Маркетплейс (Component).
+ *
+ * Расширение "Каталог Маркетплейс".
+ * Модуль "Маркетплейс"
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+  /* Заливка фона окна */
+ #g-marketplace-catalog-catcmp .x-panel-body-default {
+    background-color:#f9f9f9;
+ }
+
+/**
+ * Панель вкладок (основная) формы.
+ * Ext.tab.Panel (tabpanel)
+ */
+.g-catcmp__tab_body {
+    display: block;
+    font-size: 14px;
+    color: #7c7c7c;
+}
+.g-catcmp__tab_body text {
+    display: block;
+    padding: 0 10px 0 10px;
+}
+.g-catcmp__tab_body text p {
+    font-size: 14px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-align: justify;
+}
+.g-catcmp__tab_body text ul,
+.g-catcmp__tab_body text ol {
+    padding-left: 15px;
+    margin: 0;
+}
+.g-catcmp__tab_body text li {
+    margin-top: 5px;
+    text-align: justify;
+}
+.g-catcmp__tab_body text h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #333;
+}
+.g-catcmp__tab_body text h3,
+.g-catcmp__tab_body text h4 {
+    font-size: 15px;
+    font-weight: normal;
+    color: #217346;
+    margin: 15px 0 10px 0;
+}
+.g-catcmp__tab_body text h4 { color: #333; }
+
+.g-catcmp__nav {
+    font-size: 14px;
+    color: #667;
+}
+.g-catcmp__nav-item {
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #7c7c7c;
+    border-bottom: 1px solid #e9e9e9;
+}
+.g-catcmp__nav-item i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #d3d3d3;
+}
+.g-catcmp__nav-item span {
+    color: #418761;
+}
+.g-catcmp__nav-item ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 22px;
+}
+.g-catcmp__nav-item ul li {
+    line-height: 25px;
+}
+.g-catcmp__nav-item a {
+    color: #3e79b4;
+    text-decoration: none;
+}
+.g-catcmp__nav-item a:hover {
+    text-decoration: underline;
+}
+
+
+/**
+ * Панель вкладок (основная) формы.
+ * Ext.tab.Panel (tabpanel)
+ */
+ .g-catcmp__form .alert {
+    display: block;
+    line-height: 1.2;
+    color: #01579b;
+    background-color: #e1f5fe;
+    padding: 12px 10px;
+    font-size: 14px;
+ }
+ .g-catcmp__form .alert-warning {
+    color: #c49d5f;
+    background-color: #fff3cd;
+    border: 1px dashed #ffd28a;
+ }
+ .g-catcmp__form .alert-danger {
+    color: #cd4c32;
+    background-color: #ffece8;
+    border: 1px dashed #e6b2a8;
+ }
+
+
+/**
+ * Загрузка компонента.
+ * Ext.tab.Panel (tabpanel)
+ */
+ #g-cmp-download {
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+ #g-cmp-download .x-progress {
+    background-color: #bfbfbf;
+ }
+ #g-cmp-download .x-progress-text,
+ #g-cmp-download .x-progress-text-back {
+    font-size: 17px; 
+    font-weight: normal;
+    line-height: 40px;
+ }
+
+
+/**
+ * Панель вкладок формы.
+ * Ext.tab.Panel (tabpanel)
+ */
+/* Значок "Redis" */
+.g-icon_catcmp-header-details {
+    background-image: url("../images/icon-header-details.svg");
+}
+/* Значок "Memcached" */
+.g-icon_catcmp-header-screenshots {
+    background-image: url("../images/icon-header-screenshots.svg");
+}
+/* Значок "Memcached" */
+.g-icon_catcmp-header-install {
+    background-image: url("../images/icon-header-install.svg");
+}
+/* Значок "Filesystem" */
+.g-icon_catcmp-header-reviews {
+    background-image: url("../images/icon-header-reviews.svg");
+}
+/* Значок "Filesystem" */
+.g-icon_catcmp-header-changelog {
+    background-image: url("../images/icon-header-changelog.svg");
+}
+.g-icon_catcmp-header-license {
+    background-image: url("../images/icon-header-license.svg");
+}

@@ -1,0 +1,97 @@
+/*!
+ * Выбор загруженного компонента Маркетплейс (Selection).
+ *
+ * Расширение "Каталог Маркетплейс".
+ * Модуль "Маркетплейс"
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+ /* Заливка фона окна */
+#g-marketplace-catalog-selection .x-panel-body,
+#g-marketplace-catalog-selection .x-window-body-light {
+    background-color: #fcfcfc;
+}
+
+
+/**
+ * Описание компонента.
+ * Ext.form.Label (label)
+ */
+ .g-selection-item {
+   position: relative;
+   padding-left: 46px;
+   min-height: 64px;
+   margin-top: 8px;
+   border-bottom: 1px solid #d8d8d8;
+}
+.g-selection-item__icon {
+   position: absolute;
+   left: 0;
+   top: 10px;
+   width: 32px;
+   height: 32px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.g-selection-item__title {
+   font-size: 14px;
+   margin-bottom: 4px;
+}
+.g-selection-item__desc {
+   color: #666666;
+   font-size: 12px;
+}
+.g-selection-item__ver {
+   color: #666666;
+   font-size: 14px;
+}
+.g-selection-item__ver span { color: #217346; }
+.g-selection-item__btn {
+   position: absolute;
+   right: 0;
+   top: -7px;
+   display: block;
+   width: 50px;
+   height: 69px;
+   padding: 5px 10px 5px 10px;
+   cursor: pointer;
+   background-color: #eef1ef;
+}
+.g-selection-item__btn:hover { background-color: #bdd5c8; }
+.g-selection-item__btn .g-icon {
+   width: 100%;
+   height: 100%;
+}
+
+/**
+ * Заголовок тела окна.
+ * Ext.container.cls = "g-selection-header"
+ */
+.g-selection-header {
+   padding: 10px;
+   color: #777;
+   font-size: 14px;
+}
+.g-selection-header b { color: #217346; }
+
+/**
+ * Cписок компонентов.
+ * Ext.container.cls = "g-selection-items"
+ */
+.g-selection-items { padding: 0 10px 10px 20px; }
+
+/**
+ * Подвал окна.
+ * Ext.container.cls = "g-selection-warning"
+ */
+.g-selection-warning {
+   background: #fff7e9;
+   padding: 10px;
+   text-align: justify;
+   color: #777;
+   line-height: 15px;
+   border-bottom: 4px solid #ffab19;
+}

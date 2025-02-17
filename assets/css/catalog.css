@@ -1,0 +1,195 @@
+/*!
+ * Каталог компонентов Маркетплейс (Components).
+ *
+ * Расширение "Каталог Маркетплейс".
+ * Модуль "Маркетплейс"
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+/* Заливка заднего фона панели */
+#g-marketplace-catalog-panel .x-panel-body-default {
+    background: inherit;
+}
+
+
+/**
+ * Контейнер элемента макета.
+ * <div class="g-mcatalog__item ...">...
+ */
+ .g-mcatalog__item {
+    float: left;
+    margin: 3px 0 7px 7px;
+    padding: 1px;
+    width: 343px;
+    height: 280px;
+}
+/* выделение элемента */
+.g-mcatalog__item_selected { background: #eff5fb; }
+/* фокус элемента */
+.g-mcatalog__item.x-view-item-focused {
+    outline: none !important;
+}
+
+/**
+ * МАКЕТ компонента.
+ * <div class="g-mcatalog__thumb">...
+ */
+.g-mcatalog__thumb {
+    position: relative;
+    background: rgba(248, 248, 248, 0.5);
+    padding: 24px 7px 7px 15px;
+    min-height: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* ЗАГОЛОВОК компонента */
+/* заголовок */
+.thumb-mcatalog__title {
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+/* описание */
+.thumb-mcatalog__desc {
+    line-height: 1;
+    color: #666667;
+}
+
+/* ЗНАЧОК компонента */
+.thumb-mcatalog__icon {
+    position: relative;
+    padding-left: 65px;
+    margin-bottom: 12px;
+    min-height: 45px;
+}
+.thumb-mcatalog__icon img { 
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    width: 45px;
+}
+/* значок "установлен" */
+.thumb-mcatalog__state-installed { background-image: url("../images/icon-installed.svg"); }
+/* значок "обновить" */
+.thumb-mcatalog__state-update { background-image: url("../images/icon-update.svg"); }
+/* значок "скачать" */
+.thumb-mcatalog__state-download { background-image: url("../images/icon-download.svg"); }
+/* значок "не доступен" */
+.thumb-mcatalog__state-disabled { background-image: url("../images/icon-disabled.svg"); }
+
+/* МЕТКИ компонента */
+/* метка: вид */
+.thumb-mcatalog__type {
+    color: #254031;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.thumb-mcatalog__type span {
+    text-transform: none;
+    color: #8dafd2;
+}
+.g-mcatalog__item_module .thumb-mcatalog__type span,
+.g-mcatalog__item_edition .thumb-mcatalog__type span { color: #3e79b4; }
+.g-mcatalog__item_extension .thumb-mcatalog__type span { color: #eab765; }
+.g-mcatalog__item_panel .thumb-mcatalog__type span { color: #217346; }
+/* метка: статус */
+.thumb-mcatalog__status {
+    margin-top: 5px;
+    color: #a2ccba;
+}
+.g-mcatalog__item_over .thumb-mcatalog__status { color: #4EA17E; }
+/* метка: версия */
+.thumb-mcatalog__ver {
+    position: absolute;
+    display: block;
+    right: 1px;
+    top: -1px;
+    padding: 1px 5px 1px 5px;
+    border-radius: 0px 0px 5px 5px;
+    color: #fff;
+    font-size: 11px;
+}
+.thumb-mcatalog__ver span {
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #333;
+}
+/* метка: параметр */
+.thumb-mcatalog__param label { color: #666667; }
+/* метка: стоимость */
+.thumb-mcatalog__cost {
+    background: no-repeat url("../images/icon-cost.svg") left center;
+    padding-left: 23px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #3e79b4;
+}
+
+/* Значок состояния */
+.thumb-mcatalog__state {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.g-mcatalog__item_over .thumb-mcatalog__state { opacity: 1; }
+
+/* ВИДЫ компонента */
+/* тип: редакция */
+.g-mcatalog__item_edition { border-top: 2px solid #3e79b4; }
+.g-mcatalog__item_edition.g-mcatalog__item_over { background: #c2d3e6; }
+.g-mcatalog__item_edition .thumb-mcatalog__ver { background-color: #3e79b4; }
+/* тип: панель */
+.g-mcatalog__item_panel { border-top: 2px solid #217346; }
+.g-mcatalog__item_panel.g-mcatalog__item_over { background: #88b19b; }
+.g-mcatalog__item_panel .thumb-mcatalog__ver { background-color: #217346; }
+/* тип: расширение */
+.g-mcatalog__item_extension { border-top: 2px solid #eab765; }
+.g-mcatalog__item_extension.g-mcatalog__item_over { background: #f9e6c8; }
+.g-mcatalog__item_extension .thumb-mcatalog__ver { background-color: #eab765; }
+/* тип: виджет */
+.g-mcatalog__item_widget { border-top: 2px solid #3e79b4; }
+.g-mcatalog__item_widget.g-mcatalog__item_over { background: #c2d3e6; }
+.g-mcatalog__item_widget .thumb-mcatalog__ver { background-color: #3e79b4; }
+/* тип: модуль */
+.g-mcatalog__item_module { border-top: 2px solid #bfbfbf; }
+.g-mcatalog__item_module.g-mcatalog__item_over { background: #d4d4d4; }
+.g-mcatalog__item_module .thumb-mcatalog__ver { background-color: #bfbfbf; }
+/* тип: неопределённый */
+.g-mcatalog__item_none { border-top: 2px solid #bfbfbf; }
+.g-mcatalog__item_none.g-mcatalog__item_over { background: #d4d4d4; }
+.g-mcatalog__item_none .thumb-mcatalog__ver { background-color: #bfbfbf; }
+
+/* Компонент каталога выделен */
+.g-mcatalog__item_selected .g-mcatalog__thumb {
+    background: transparent;
+}
+/* Индикатор загрузки компонентов каталога */
+.g-mcatalog .loading-indicator {
+    font-size:11px;
+    background-image:url("images/loading/loading.gif");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left:20px;
+    margin:10px;
+}
+
+
+/**
+ * Панель инструментов каталога.
+ */
+ /* Значок "Выбор загруженных компоннетов" */
+ .g-icon_mcatalog-tbar-selection { background-image: url("../images/icon-tbar-selection.svg"); }
+ /* Значок "Лицензия" */
+ .g-icon_mcatalog-tbar-license { background-image: url("../images/icon-tbar-license.svg"); }
