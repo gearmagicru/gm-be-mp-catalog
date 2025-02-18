@@ -1,6 +1,6 @@
 {
     "name": "gearmagicru/gm-be-mp-catalog",
-    "description": "Control Panel extension (module) \"Marketplace Сatalog\"",
+    "description": "Control Panel extension (module) \"Marketplace Application Catalog\"",
     "keywords": ["gearmagic", "gm-panel", "gm-component", "gm-extension", "gm-marketplace", "extension", "catalog"],
     "homepage": "https://apps.gearmagic.ru/component/gm-be-mp-catalog",
     "type": "component",
